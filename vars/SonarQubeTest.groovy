@@ -6,7 +6,7 @@ def call(){
         sh"./gradlew sonarqube \
   -Dsonar.projectKey=final \
   -Dsonar.host.url=http://52.3.247.241:9000 \
-  -Dsonar.login=sonarqube"
+  "
 
     }
 
