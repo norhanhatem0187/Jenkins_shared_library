@@ -7,7 +7,7 @@ def call(String imageName) {
 
     // login to OpenShift Cluster via cluster url & service account token
     
-            sh "kubectl apply -f ."
+            sh "kubectl apply -f . --validate=false"
    
 
 }
