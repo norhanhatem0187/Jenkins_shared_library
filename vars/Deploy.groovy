@@ -7,7 +7,7 @@ def call(String OpenShiftCredentialsID, String openshiftClusterurl, String opens
 
     // login to OpenShift Cluster via cluster url & service account token
     
-            sh "oc apply -f ."
+            sh "kubectl apply -f ."
    
 
 }
