@@ -1,7 +1,7 @@
 #!usr/bin/env groovy
 
 def call(){ 
-    withSonarQubeEnv(installationName: 'sq' ) { 
+    withSonarQubeEnv(credentialsId: 'sq',installationName: 'sq' ) { 
 
         sh"./gradlew sonarqube \
   -Dsonar.projectKey=final \
